@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.main{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    text-align: center;
+    margin: 50px;
+    background: hsl(233, 47%, 7%);
+    margin-right: 87px;
+    
+}
+
+.image{
+    max-width: 100vw;
+    height: 418px;
+    background-image: url(/images/image-header-mobile.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;  
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+}
+
+.head{
+    font-size: 27px;
+    margin: 30px 0 20px 0;
+    font-weight: 600; 
+    color:  hsl(0, 0%, 100%)
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.text{
+    line-height: 32px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+
+.all{
+    padding-bottom: 5px;
+}
+
+.stats{
+    margin: 30px;
+}
+
+.companies{
+    font-size: 25px;
+    color:  hsl(0, 0%, 100%);
+}
+
+.templates{
+    font-size: 14px;
+    margin: 5px;
+    color:  hsla(0, 0%, 100%, 0.6);
+}
+
+.head1{
+    display: none;
+}
+
+.text1{
+    display: none;
+}
+
+.image1{
+    display: none;
+}
+
+@media screen and (min-width:700px) {
+
+    .head{
+        display: none;
+    }
+    
+    .text{
+        display: none;
+    }
+    
+    .image{
+        display: none;
+    }
+
+    .head1{
+        display: block;
+        text-align: left;
+        padding: 30px 0 10px 80px ;
+        font-size: 30px;
+        margin: 30px 0 20px 0;
+        font-weight: 600; 
+        color:  hsl(0, 0%, 100%)
+    }
+    
+    .text1{
+        display: block;
+        text-align: left;
+        padding-left: 80px;
+        line-height: 32px;
+        font-size: 22px;
+        margin-bottom: 30px;
+        font-family: 'Inter', sans-serif;
+        color:  hsla(0, 0%, 100%, 0.75);
+    }
+    
+    .first{
+        padding: 80px 0 ;
+    }
+    
+    .image1{
+        display: block;
+        width: 50%;
+        background-image: url(/images/image-header-desktop.jpg);
+        background-size: cover;
+        overflow: hidden;
+        border-radius: 0 5px 5px 0;  
+        background-color: hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 200px 200px 0 100px;
+    }
+
+    .all{
+        display: flex;
+        margin-left: 40px;
+    }
+}
